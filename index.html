@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container flex">
+            <a href="/" class="text-2xl font-bold">Portfolio</a>
+            <nav class="hidden md:flex">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="btn md:hidden">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>G O D I E </h1>
+                <p>Explore my latest projects and learn more about me.</p>
+                <div>
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="grid">
+                    <div>
+                        <h2>About Me</h2>
+                        <p class="justify-text">I'm Josh, a dedicated Frontend Developer with a passion for crafting seamless digital experiences. Specializing in UI/UX design,
+                            I combine clean code with visually appealing interfaces to create user-centric solutions. My philosophy revolves around simplicity,
+                            ensuring designs are both elegant and functional.</p>
+                        <p class="justify-text">During my third year in college, I had the opportunity to work on various projects that deepened my understanding of frontend development 
+                            and honed my skills in delivering high-quality, responsive, and accessible websites. In my free time, I enjoy diving into new technologies, 
+                            staying updated with the latest industry trends, and contributing to open-source projects. I'm always eager to learn and grow as a developer.</p>
+                    </div>
+                    <div>
+                        <img src="./images/jos.jpg" alt="Profile Picture" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="./images/car.jpg" alt="Arduino Car" />
+                        <h3>Arduino Car</h3>
+                        <p>A remote-controlled car powered by Arduino and Bluetooth technology, allowing seamless control 
+                            via a smartphone app. This project showcases my skills in integrating hardware and software for real-time, wireless communication.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="card">
+                        <img src="./images/gate.jpg" alt="Auto Entry Gate" />
+                        <h3>Auto Entry Gate</h3>
+                        <p>An automated toll gate system that uses an ultrasonic sensor to detect approaching vehicles, triggering the gate to open or close.
+                             This project highlights my ability to design and implement sensor-driven automation for efficient and secure access control.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="card">
+                        <img src="./images/r2.png" alt="Manga Online Book Store" />
+                        <h3>Manga Online Book Store</h3>
+                        <p>An e-commerce platform dedicated to manga enthusiasts, offering a wide range of titles with features like user reviews, search functionality,
+                             and secure online transactions. This project demonstrates my expertise in creating dynamic, user-friendly websites with a focus on seamless 
+                             shopping experiences</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required />
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Enter your message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Godilos. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
