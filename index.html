@@ -25,7 +25,7 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>G O D I E </h1>
+                <h1>G O D I E</h1>
                 <p>Explore my latest projects and learn more about me.</p>
                 <div>
                     <a href="#projects" class="btn">View Projects</a>
@@ -83,18 +83,20 @@
         <section class="contact" id="contact">
             <div class="container">
                 <h2>Get in Touch</h2>
-               <form action="https://formsubmit.co/el/yinozi/20e590cd5d6de1740346e4cf9ac90c50"POST">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="5567e53d-0dff-48d0-b027-cefe13302759">
+
                     <div>
                         <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Enter your name" required />
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required />
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Enter your email" required />
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required />
                     </div>
                     <div>
                         <label for="message">Message</label>
-                        <textarea id="message" placeholder="Enter your message" rows="5" required></textarea>
+                        <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
